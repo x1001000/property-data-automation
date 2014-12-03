@@ -21,3 +21,5 @@ with open('list.txt', 'r') as f:
                         except:
                             print '\trenamed ' + match.group(1) + '_no_exif' + '.jpg'
                             call('cp ' + folder + '/' + file + ' ' + folder + '/' + match.group(1) + '_no_exif' + '.jpg', shell=True)
+call('rm -f list.txt', shell=True)
+call('rm -f code.txt', shell=True)
