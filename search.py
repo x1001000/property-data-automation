@@ -3,7 +3,7 @@ from subprocess import call
 from re import search
 
 call('ls -1R 財物位置 > ls.txt', shell=True)
-call('cp property.csv match.csv', shell=True)
+call('cat property.a.csv property.b.csv > match.csv', shell=True)
 call('rm -f location.txt', shell=True)
 call('touch location.txt', shell=True)
 
