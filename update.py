@@ -2,6 +2,7 @@
 from subprocess import call
 from re import search
 
+call('rm latest.a.csv latest.b.csv', shell=True)
 call('ls -1R 財物位置 > ls.txt', shell=True)
 
 def latest_dict():
